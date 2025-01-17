@@ -123,6 +123,8 @@ h2 {
 
 /* Styles des paragraphes */
 p {
+    min-height: 48px
+    box-sizing: border-box;
     background-color: #D2B48C ; 
     color: #527017; 
     padding: 15rem; 
