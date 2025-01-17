@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcul des Moyennes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calcul de la moyenne de SVT</h1>
+    <form id="noteFormDS">
+        <label>Numéro de DS : <input type="number" id="numeroDS" step="1" required></label>
+        <label>Note : <input type="number" id="noteDS" step="0.01" min="0" max="20" required></label>
+        <button type="button" id="addNoteDS">Ajouter la note</button>
+    </form>
+
+    <h2>Notes ajoutées - DS</h2>
+    <table id="notesTableDS">
+        <thead>
+            <tr>
+                <th>Numéro de DS</th>
+                <th>Note</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+
+    <form id="noteFormQCM">
+        <label>Numéro de QCM : <input type="number" id="numeroQCM" step="1" required></label>
+        <label>Note : <input type="number" id="noteQCM" step="0.01" min="0" max="20" required></label>
+        <label>Total de points : <input type="number" id="totalPoints" step="0.01" min="0" max="20" required></label>
+        <button type="button" id="addNoteQCM">Ajouter la note</button>
+    </form>
+
+    <h2>Notes ajoutées - QCM</h2>
+
+
+    <table id="notesTableQCM">
+        <thead>
+            <tr>
+                <th>Numéro de QCM</th>
+                <th>Note</th>
+                <th>Total de points</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+
+    <form id="noteFormColles">
+        <label>Moyenne de colles : <input type="number" id="moyColles" step="0.01" min="0" max="20" required></label>
+    </form>
+
+    <form id="noteTP">
+        <label>Note de TP blanc : <input type="number" id="TP" step="0.01" min="0" max="20" required></label>
+    </form>
+
+    <h2>Résultats</h2>
+    
+    <button id="calculerMoyenne" type="button" class="centered-button" onclick="calculerMoyenneSVT()">Calculer la moyenne finale</button>
+
+    <p id="moyenneDS">Moyenne de DS réelle : -</p>
+    <p id="moyDSCalcul">Moyenne de DS calculée : -</p>
+    <p id="moyDSUse">Moyenne de DS prise en compte : -</p>
+    <p id="moyQCM">Moyenne de QCM : -</p>
+    <p id="moySVT">Moyenne finale : -</p>
+
+    <script src="script.js"></script>
+</body>
+</html>

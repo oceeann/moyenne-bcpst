@@ -1,0 +1,148 @@
+body {
+    font-family: 'Arial', sans-serif; 
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7; /* arrière-plan */
+    color: #333; /* texte */
+}
+
+/* En-tête */
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 20px;
+    color: #6B3F2A ; 
+    font-weight: 600;
+}
+
+/* Tableaux */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+table, th, td {
+    border: 1px solid #8B4513; /* Bordure pour les tableaux */
+}
+
+th {
+    background-color: #6B8E23; /* en-tête */
+    color: white; /* texte */
+    text-align: center;
+    padding: 12px;
+    font-size: 1.1em;
+}
+
+td {
+    text-align: center;
+    padding: 12px;
+    background-color: #ecf0f1; /* arrière-plan pour les cellules */
+}
+
+tr:nth-child(even) td {
+    background-color: #f9f9f9; /* couleur de fond */
+}
+
+tr:hover td {
+    background-color: #dcdfe1; /* Effet au survol des lignes pour l'interaction */
+}
+
+/* Formulaires */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+label {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #6B8E23; /* labels */
+}
+
+input[type="number"] {
+    width: 200px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #8B4513; /* les champs */
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: white;
+}
+
+input[type="number"]:focus {
+    border-color: #228B22; 
+}
+
+button {
+    background-color: #6B8E23; /* les boutons */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #4E5B31; /* effet au survol */
+}
+
+/* Résultats */
+h2 {
+    text-align: center;
+    color: #8B4513; /* sous-titres */
+    font-size: 2em;
+    margin-top: 30px;
+}
+
+#resultats p {
+    text-align: center;
+    font-size: 1.2em;
+    color: #6B8E23; /* les résultats */
+}
+
+/* Responsivité */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px; /* Réduire la taille de la police sur petits écrans */
+    }
+
+    table, th, td {
+        font-size: 0.9em; /* Réduire la taille du texte dans les tableaux */
+    }
+
+    input[type="number"], button {
+        width: 80%; /* Adapter la taille des éléments pour les petits écrans */
+    }
+}
+
+/* Styles des paragraphes */
+p {
+    background-color: #D2B48C ; 
+    color: #527017; 
+    padding: 15px; 
+    border-radius: 8px; 
+    font-weight: bold; 
+    box-shadow: 3px 3px 6px rgba(139, 69, 19, 0.3); 
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+/* Effet au survol */
+p:hover {
+    background-color: #8B4513; 
+    color: #FFFFFF; 
+    cursor: pointer; 
+}
+
+
+.centered-button {
+    display: block;
+    margin: 20px auto; 
+    padding: 10px 20px; 
+    
+}
