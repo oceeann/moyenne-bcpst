@@ -156,7 +156,7 @@ function calculerMoyenneQCM() {
     })
 
     if (nombreQCM === 0) {
-        return "Aucune note disponible";
+        document.getElementById("moyQCM").textContent = `Moyenne de QCM : -`;
     }
 
     const moyenneQCM = (sommeNotesSur20 / nombreQCM).toFixed(2); // Calcul de la moyenne
